@@ -1,36 +1,48 @@
 @font-face {
-    font-family: 'cheese_burgerregular';
-    src: url('fonts/cheese_burger-webfont.woff2') format('woff2'),
-         url('fonts/cheese_burger-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'cheese_burgerregular';
+	src: url('fonts/cheese_burger-webfont.woff2') format('woff2'),
+		url('fonts/cheese_burger-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 
 }
-body{
+
+body {
 	background-image: url(images/background&.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: white;
+	height: 2750px;
+	width: 1903px;
 }
 
-header {
-    background-image: url(images/logo.png);
-    background-size: 100px 100px; /* Personnalisez la taille de votre logo */
-    background-repeat: no-repeat; /* Évite la répétition de l'image de fond */
-    padding-left: 120px;
-	width: 23%;
-	margin-top: 5%;
-	margin-left: 1%;
+.page-wrapper {
+	height: 100px;
+	position: relative;
+	bottom: 1%;
 }
+
+
+header {
+	background-image: url(images/logo.png);
+	background-size: 100px 100px;
+	/* Personnalisez la taille de votre logo */
+	background-repeat: no-repeat;
+	/* Évite la répétition de l'image de fond */
+	padding-left: 120px;
+	margin: 3%;
+	height: 100px;
+	width: 20%;
+}
+
 h1,
-h2{
+h2 {
 	font-family: 'Caveat', cursive;
 	font-size: 40px;
-	color: rgb(218, 218, 218);
+	color: rgba(209, 209, 209, 0.932);
 	margin: 0;
 }
 
-.summary{
+.summary {
 	background-image: url(images/papier.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -41,11 +53,11 @@ h2{
 	height: 309px;
 	width: 391px;
 	position: absolute;
-	right: 5%;	
-	top: 5%;
+	right: 3%;
+	top: 0%;
 }
 
-.summary p{
+.summary p {
 	display: flex;
 	justify-content: center;
 	font-family: 'Dancing Script', cursive;
@@ -55,48 +67,67 @@ h2{
 	color: rgb(0, 0, 0);
 }
 
-h1{
-	border-bottom: 1px solid white;
+h1 {
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.preamble p, 
+.participation,
+.explanation,
+.benefits,
+.requirements {
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 514px;
+	max-height: 297px;
+	overflow-y: scroll;
+	margin: auto;
+
+}
+
+.preamble p,
 .explanation p,
 .participation p,
 .benefits p,
-.requirements p
- {
+.requirements p {
 	padding: 15px;
 	font-family: 'cheese_burgerregular';
 	font-size: 20px;
-	margin-bottom: 3%;
-    opacity: 0;
-	max-height: 100px;
+	margin: 0;
+	opacity: 0;
 	overflow: hidden;
-	transition: max-height 1000000000000s ease-in-out, opacity 100s ease-in-out;
+	color: rgb(255, 255, 255);
+	transition: max-height 1s ease-in-out, opacity 100s ease-in-out;
 }
 
 h3:hover ~ p {
-    opacity: 1;
-    max-height: 200px; 
-    transition: opacity 0.9s ease-in-out;
+	opacity: 1;
+	height: auto;
+	transition: opacity 0.9s ease-in-out;
 }
 
- h3 {
-    opacity: 1;
+h3:focus ~ p {
+	display: block;
+	height: auto;
+  }
+
+h3 {
+	opacity: 1;
 	cursor: pointer;
 	font-family: 'Caveat', cursive;
 	font-size: 35px;
 	margin: 0;
+	color: rgb(255, 255, 255);
 }
 
 .preamble {
-	background-image: url(images/tableau.png);
+	background-image: url(images/tableauvert.png);
 	background-repeat: no-repeat;
-	height: 297px;
-	width: 494px;
+	height: 340px;
+	width: 600px;
+	padding: 7px;
 	position: relative;
-	top: 200px;
-	left: 200px;
+	margin: 8% auto 0;
 	overflow-y: scroll;
 }
 
@@ -106,36 +137,10 @@ h3:hover ~ p {
 	padding: 15px 0;
 }
 
-.explanation{
-	background-image: url(images/tableau.png);
-	background-repeat: no-repeat;
-	height: 297px;
-	width: 494px;
-	position: relative;
-	bottom: 95px;
-	left: 800px;
-	max-height: 297px;
-	overflow-y: scroll;
-}
-
-
-
 .explanation h3 {
 	display: flex;
 	justify-content: center;
 	padding: 15px 0;
-}
-
-.participation {
-	background-image: url(images/tableau.png);
-	background-repeat: no-repeat;
-	height: 297px;
-	width: 494px;
-	position: relative;
-	top: 1%;
-	left: 20px;
-	max-height: 297px;
-	overflow-y: scroll;
 }
 
 .participation h3 {
@@ -144,17 +149,6 @@ h3:hover ~ p {
 	padding: 15px 0;
 }
 
-.benefits{
-	background-image: url(images/tableau.png);
-	background-repeat: no-repeat;
-	height: 297px;
-	width: 494px;
-	position: relative;
-	bottom: 296px;
-	left: 35%;
-	max-height: 297px;
-	overflow-y: scroll;
-}
 
 .benefits h3 {
 	display: flex;
@@ -162,17 +156,6 @@ h3:hover ~ p {
 	padding: 15px 0;
 }
 
-.requirements {
-	background-image: url(images/tableau.png);
-	background-repeat: no-repeat;
-	height: 297px;
-	width: 494px;
-	position: relative;
-	bottom: 595px;
-	left: 1065px;
-	max-height: 297px;
-	overflow-y: scroll;
-}
 
 .requirements h3 {
 	display: flex;
@@ -180,3 +163,15 @@ h3:hover ~ p {
 	padding: 15px 0;
 }
 
+.main-supporting {
+	width: 1113px;
+	height: 1190px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: auto;
+}
+
+footer {
+	position: relative;
+	top: 80%;
+}
