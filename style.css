@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'cheese_burgerregular';
+    src: url('fonts/cheese_burger-webfont.woff2') format('woff2'),
+         url('fonts/cheese_burger-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	background-image: url(images/background&.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+header {
+    background-image: url(images/logo.png);
+    background-size: 100px 100px; /* Personnalisez la taille de votre logo */
+    background-repeat: no-repeat; /* Évite la répétition de l'image de fond */
+    padding-left: 120px;
+	width: 25%;
+	margin-top: 5%;
+	margin-left: 1%;
+}
+h1,
+h2{
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	color: rgb(218, 218, 218);
+	margin: 0;
+}
+
+.summary{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 60%;
+	position: absolute;
+	margin-top: 5%;
+	top: 0;
+	right: 0;
+	border: 3px solid beige;
+}
+
+.summary p{
+	display: flex;
+	justify-content: center;
+	font-family: 'Stylish', sans-serif;
+	font-style: italic;
+	font-size: 19px;
+	font-weight: 600;
+	color: beige;
+}
+
+h1{
+	border-bottom: 1px solid white;
+}
+
+.preamble p, 
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p
+ {
+	padding: 20px;
+	font-family: 'cheese_burgerregular';
+	font-size: 20px;
+	margin: 0;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+h3:hover + p {
+    opacity: 1;
+    max-height: 400px; 
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+
+ h3 {
+    opacity: 1;
+	cursor: pointer;
+	font-family: 'Caveat', cursive;
+	font-size: 35px;
+	margin: 0;
+}
+
+.preamble {
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 494px;
+	position: relative;
+	top: 200px;
+	left: 400px;
+}
+
+.preamble h3 {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+
+.explanation{
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 494px;
+	position: relative;
+	top: 0;
+	left: 1000px;
+}
+
+
+
+.explanation h3 {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+
+.participation {
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 494px;
+	position: relative;
+	top: 200px;
+	left: 100px;
+}
+
+.participation h3 {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+
+.benefits{
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 494px;
+	position: relative;
+	top: 100px;
+	left: 700px;
+}
+
+.benefits h3 {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+
+.requirements {
+	background-image: url(images/tableau.png);
+	background-repeat: no-repeat;
+	height: 297px;
+	width: 494px;
+	position: relative;
+	top: 0;
+	left: 1300px;
+}
+
+.requirements h3 {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0;
+}
+
