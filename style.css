@@ -18,7 +18,7 @@ header {
     background-size: 100px 100px; /* Personnalisez la taille de votre logo */
     background-repeat: no-repeat; /* Évite la répétition de l'image de fond */
     padding-left: 120px;
-	width: 25%;
+	width: 23git%;
 	margin-top: 5%;
 	margin-left: 1%;
 }
@@ -31,25 +31,28 @@ h2{
 }
 
 .summary{
+	background-image: url(images/papier.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	width: 60%;
+	justify-content: center;
+	align-items: center;
+	height: 309px;
+	width: 391px;
 	position: absolute;
-	margin-top: 5%;
-	top: 0;
-	right: 0;
-	border: 3px solid beige;
+	right: 5%;	
+	top: 5%;
 }
 
 .summary p{
 	display: flex;
 	justify-content: center;
-	font-family: 'Stylish', sans-serif;
-	font-style: italic;
-	font-size: 19px;
-	font-weight: 600;
-	color: beige;
+	font-family: 'Dancing Script', cursive;
+	padding: 20px;
+	font-size: 21px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
 }
 
 h1{
@@ -62,21 +65,21 @@ h1{
 .benefits p,
 .requirements p
  {
-	padding: 20px;
+	padding: 15px;
 	font-family: 'cheese_burgerregular';
 	font-size: 20px;
-	margin: 0;
+	margin-bottom: 3%;
     opacity: 0;
-    max-height: 0;
-    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+	max-height: 100px;
+	overflow: hidden;
+	transition: max-height 1000000000000s ease-in-out, opacity 100s ease-in-out;
 }
 
-h3:hover + p {
+h3:hover ~ p {
     opacity: 1;
-    max-height: 400px; 
-    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+    max-height: 200px; 
+    transition: opacity 0.9s ease-in-out;
 }
-
 
  h3 {
     opacity: 1;
@@ -93,7 +96,8 @@ h3:hover + p {
 	width: 494px;
 	position: relative;
 	top: 200px;
-	left: 400px;
+	left: 200px;
+	overflow-y: scroll;
 }
 
 .preamble h3 {
@@ -108,8 +112,10 @@ h3:hover + p {
 	height: 297px;
 	width: 494px;
 	position: relative;
-	top: 0;
-	left: 1000px;
+	bottom: 95px;
+	left: 800px;
+	max-height: 297px;
+	overflow-y: scroll;
 }
 
 
@@ -126,8 +132,10 @@ h3:hover + p {
 	height: 297px;
 	width: 494px;
 	position: relative;
-	top: 200px;
-	left: 100px;
+	top: 1%;
+	left: 20px;
+	max-height: 297px;
+	overflow-y: scroll;
 }
 
 .participation h3 {
@@ -142,8 +150,10 @@ h3:hover + p {
 	height: 297px;
 	width: 494px;
 	position: relative;
-	top: 100px;
-	left: 700px;
+	bottom: 296px;
+	left: 35%;
+	max-height: 297px;
+	overflow-y: scroll;
 }
 
 .benefits h3 {
@@ -158,8 +168,10 @@ h3:hover + p {
 	height: 297px;
 	width: 494px;
 	position: relative;
-	top: 0;
-	left: 1300px;
+	bottom: 595px;
+	left: 1065px;
+	max-height: 297px;
+	overflow-y: scroll;
 }
 
 .requirements h3 {
